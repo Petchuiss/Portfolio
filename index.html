@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peter Tchuisse · Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/modern-normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <div class="page-container">
+
+
+    <header class="navbar">
+      <a href="index.html" class="logo">PT</a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+
+    <main class="hero-section">
+
+      <section class="hero-text">
+        <p class="eyebrow-text">Portfolio</p>
+        <h1 class="hero-title">Peter Tchuisse</h1>
+        <p class="hero-role">Informatics · Healthcare Management & Policy</p>
+
+        <p class="hero-description">
+          For my portofolio, I have designed a <span>calm, warm interface</span> inspired by gold interiors,
+          warm textures, and vibe of luxury. This portfolio is meant to highlight my skills in HTML, CSS, and JavaScript
+          to create
+          a clear and responsive website.
+        </p>
+
+    
+
+
+
+
+        <div class="hero-buttons">
+          <a href="work.html" class="btn btn-primary">View Work</a>
+          <a href="about.html" class="btn btn-outline">About Me</a>
+        </div>
+      </section>
+
+      <section class="hero-visuals">
+        <img src="images/Picture of Peter.jpg" alt="Picture" class="hero-image">
+      </section>
+
+    </main>
+
+
+
+
+
+    <footer class="footer">
+      © <span id="year"></span> Peter Tchuisse · Portfolio
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>

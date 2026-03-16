@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Process · Peter Tchuisse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/modern-normalize.css">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="page-container">
+
+    <header class="navbar">
+      <a href="index.html" class="logo">PT</a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+  <div class="page-wrapper">
+    <main class="page-inner">
+      <header class="section-header">
+        <h1 class="section-title">Process</h1>
+        <p class="section-tagline">How this website was built</p>
+      </header>
+
+      <section>
+        <h2 class="heading-sub">Design choices</h2>
+        <p>
+          The visual representation of this website comes directly from a mood board I crafted.
+          Below are the colors and feelings i used to craft this website. I used one main serif display typeface
+          for headings and a clean sans-serif for body text to keep things modern,warm and luxurious.
+        </p>
+        <p>
+          My information is split across five pages so there is enough space to see how I used
+          HTML and CSS to create this layout. Each page shares a consistent header, quick navigation, and closing footer.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="heading-sub">Creation &amp; layout decisions</h2>
+        <ul>
+          <li>Used flexbox for the header and basic layout.</li>
+          <li>Used  CSS for project cards shown below.</li>
+          <li>Added media queries to switch from wide view to condensed views on smaller screens.</li>
+          <li>Made sure all images were set to a comfortable width level, this way they can adjust accordingly.
+      </section>
+
+      <section>
+        <h2 class="heading-sub">Build Timeline</h2>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <strong>Step 1 - Mood &amp; structure.</strong>
+            Planned out the color palette, typography, and number of pages I would use.
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <strong>Step 2 - HTML skeleton.</strong>
+            Used HTML to present information on each page in an organized fashion.
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <strong>Step 3 - Shared CSS.</strong>
+            Created one external stylesheet with typography, flexbox, grid, and media queries to keep consistency.
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <strong>Step 4 - Interaction.</strong>
+            Added a small JavaScript filter to all pages.
+          </li>
+        </ol>
+       
+        <section class="hero-visuals" aria-hidden="true">
+        <div class="card marble-card"><span>Marble · Structure</span></div>
+        <div class="card gold-card"><span>Gold · Accent</span></div>
+        <div class="card neutral-card"><span>Soft Neutrals · Calm</span></div>
+        <div class="card coffee-card"><span>Espresso · Warmth</span></div>
+      </section>
+
+      </section>
+      
+    </main>
+
+    <footer class="site-footer">
+      © <span id="year-process"></span> Peter Tchuisse · Portfolio
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("year-process").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

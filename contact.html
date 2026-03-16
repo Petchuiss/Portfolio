@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact · Peter Tchuisse</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/modern-normalize.css">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="page-container">
+
+
+    <header class="navbar">
+      <a href="index.html" class="logo">PT</a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="page-wrapper">
+      <main class="page-inner">
+        <header class="section-header">
+          <h1 class="section-title">Contact</h1>
+          <p class="section-tagline">Let's work together!</p>
+        </header>
+
+        <section class="contact-layout">
+          <article class="contact-panel">
+            <h2>Let's Work!</h2>
+            <p>
+              Please feel free to shoot me an email! You can contact me at <a href="mailto:ptchuiss@iu.edu?subject=Portfolio Inquiry">ptchuiss@iu.edu</a>
+               with any questions, comments, or opportunities. I am always open to connecting and talking about potential roles, projects, or just to chat about technology! <br>
+              <html lang="en">
+              <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+              </head>
+              <body>
+                
+              </body>
+              </html><br>
+              You can also reach out to me via <a href="https://www.linkedin.com/in/ptch01/"> Linkedin</a>!
+            </p>
+            <p> Thank you for stopping by!</p>
+            <div class="contact-meta">
+              <span>Based in Indiana · Open to remote roles</span>
+              <span>Interested in Data Analyst, Supply Chain Analyst, Healthcare Analyst, and IT Technician
+                roles.</span>
+            </div>
+          </article>
+          <aside>
+            <form class="contact-form" action="https://formsubmit.co/ptchuiss@iu.edu" method="POST">
+
+              <label>Name</label>
+              <input type="text" name="name" required>
+
+              <label>Email</label>
+              <input type="email" name="email" required>
+
+              <label>Message</label>
+              <textarea name="message" required></textarea>
+
+              <input type="hidden" name="_subject" value="Portfolio Contact Message">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_replyto" value="email">
+
+              <button type="submit" class="btn btn-light">Send</button>
+
+            </form>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        © <span id="year-contact"></span> Peter Tchuisse · Portfolio
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      document.getElementById("year-contact").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
